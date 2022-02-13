@@ -4,7 +4,7 @@ import About from './AboutMe';
 import Projects from './MyProjects';
 import Contact from './ContactMe';
 
-export default function PortfolioContainer() {
+export default function PageContainer() {
   const [currentPage, setCurrentPage] = useState('#about');
 
   const renderPage = () => {

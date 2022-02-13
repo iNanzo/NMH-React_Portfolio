@@ -1,11 +1,15 @@
 import './App.css';
-import BucketList from './components/BucketList';
+import PageContainer from './components/PageContainer';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="bucket-app">
-      <BucketList />
-    </div>
+    <React.StrictMode>
+      <div>
+        <PageContainer />
+        <Footer />
+      </div>
+    </React.StrictMode>
   );
 }
 
