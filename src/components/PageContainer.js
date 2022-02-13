@@ -5,7 +5,7 @@ import Projects from './MyProjects';
 import Contact from './ContactMe';
 
 export default function PageContainer() {
-  const [currentPage, setCurrentPage] = useState('#about');
+  const [currentPage, setCurrentPage] = useState('About');
 
   const renderPage = () => {
     if (currentPage === 'About') {
