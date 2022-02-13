@@ -1,195 +1,204 @@
+:root {
+  --navcol: #A5402D;
+  --footcol: #863223;
+  --dark: rgb(45, 45, 75);
+  --light: whitesmoke;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: sans-serif;
+  background-color: var(--dark);
 }
 
-body {
-  background-color: whitesmoke;
-}
+/* Main */
 
-.bucket-app {
+header {
+  background-color: var(--navcol);
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 800px;
-  min-height: 600px;
-  background: black;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 10%;
+}
+
+h1, h2, body {
   text-align: center;
-  margin: 32px auto;
-  border-radius: 20px;
-  padding-bottom: 32px;
+  color: var(--light);
 }
 
 h1 {
-  margin: 32px 0;
-  color: #fff;
-  font-size: 24px;
+  font-size: 175%;
+  padding: 40px;
 }
 
-h3 {
-  margin: auto;
-  color: rgb(66, 171, 231);
-  font-size: 20px;
+h2 {
+  font-size: 150%;
+  margin-top: 25px;
+  padding: 30px;
 }
 
-.complete {
-  text-decoration: line-through;
-  opacity: 0.4;
-}
-
-.bucket-form {
-  margin-bottom: 32px;
-}
-
-.bucket-input {
-  padding: 14px 32px 14px 16px;
-  border-radius: 4px;
-  border: 2px solid #5d0cff;
-  outline: none;
-  width: 320px;
-  background: transparent;
-  color: #fff;
-}
-
-.bucket-input::placeholder {
-  color: #e2e2e2;
-}
-
-.bucket-button {
-  padding: 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
-  background: #5d0cff;
-  color: #fff;
-  text-transform: capitalize;
-}
-
-.bucket-input.edit {
-  border: 2px solid #149fff;
-}
-
-.bucket-button.edit {
-  background: linear-gradient(
-    90deg,
-    rgba(20, 159, 255, 1) 0%,
-    rgba(17, 122, 255, 1) 100%
-  );
-  padding: 16px 22px;
-}
-
-.bucket-container {
+body {
+  font-size: 16px;
   display: flex;
-  flex-direction: row;
-  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.bucket-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 4px auto;
-  color: #fff;
-  padding: 16px;
-  border-radius: 5px;
-  width: 90%;
+footer {
+  padding: 30px;
+  background-color: var(--footcol);
 }
 
-.low {
-  background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  );
+/* Navbar/Lists */
+
+.pagename {
+  font-weight: bolder;
+  font-size: larger;
+  background-color: var(--navcol);
 }
 
-.medium {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 12, 241, 1) 0%,
-    rgba(250, 0, 135, 1) 100%
-  );
+li, button {
+  float: left;
+  color: var(--light);
+  background-color: var(--navcol);
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
 }
 
-.high {
-  background: linear-gradient(
-    90deg,
-    rgba(20, 159, 255, 1) 0%,
-    rgba(17, 122, 255, 1) 100%
-  );
-}
-
-.icons {
-  display: flex;
-  align-items: center;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.delete-icon {
-  margin-right: 5px;
-  color: #fff;
-}
-
-.edit-icon {
-  color: #fff;
-}
-
-/* Dropdown menu */
-
-/* Dropdown Button */
-.dropbtn {
-  background-color: #ec5700;
-  border-radius: 4px;
-  width: 75px;
-  color: white;
-  padding: 16px;
-  margin: 10px;
-  /* font-size: 16px; */
-  border: none;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
+.navlink li {
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ffffff;
-  min-width: 215px;
-  border-radius: 4px;
-  padding: 16px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content p {
-  color: black;
-  padding: 12px 16px;
+.navlink a {
+  padding: 15px 10px;
+  float: left;
+  color: var(--light);
+  background-color: var(--navcol);
+  font-weight: 500;
+  font-size: 16px;
   text-decoration: none;
-  display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content p:hover {
-  background-color: #ddd;
+.navlink a:hover {
+  background-color: var(--light);
+  color: var(--dark);
+}
+/* About Me */
+
+.about img {
+  float: left;
+  margin-left: 10%;
+  max-width: 20%;
+  height: auto;
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+.about p {
+  padding: 10%;
+  line-height: 1.3;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #5d0cff;
+/* My Projects */
+
+.projects {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projects a {
+  color: var(--navcol);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* Project Cards */
+
+.card {
+  padding: 10px;
+  margin: 10px;
+  min-height: 200px;
+}
+
+.card p {
+  padding: 15px;
+  line-height: 1.3;
+
+}
+
+.card h2 {
+  margin-top: 0px;
+  font-size: 100%;
+}
+
+.card img:hover {
+  box-shadow: inset 0px 0px 10px var(--light), 0 0 25px var(--light);
+}
+
+.mainproj h2 {
+  font-size: 130%;
+}
+
+.card img {
+  border-width: 1px;
+  border-radius: 2%;
+  width: 80%;
+  height: auto;
+}
+
+.mainproj > img {
+  border-color: var(--light);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2%;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: auto;
+}
+
+/* Contact Me */
+
+.contact p {
+  margin-bottom: 1%;
+}
+
+#lastcon {
+  margin-bottom: 5%;
+}
+
+.contact a {
+  color: var(--navcol);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+
+/* Screen Ratio */
+  
+@media screen and (max-width: 768px) {
+  
+  .about img {
+      float: none;
+      margin-left: 0%;
+  }
+  
+  .about p {
+      padding: 10%;
+  }
+  
+}
+
+@media screen and (min-width: 992px) {
+
+  .card {
+      max-width: 40%;
+  }
+
+  .mainproj {
+      max-width: 80%;
+  }
 }
