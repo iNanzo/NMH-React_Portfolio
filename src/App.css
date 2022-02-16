@@ -52,6 +52,20 @@ footer {
   background-color: var(--footcol);
 }
 
+.footertext {
+  padding: 15px 10px;
+  float: center;
+  color: var(--light);
+  background-color: var(--footcol);
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footercolor {
+  background-color: var(--footcol);
+}
+
 /* Navbar/Lists */
 
 .pagename {
