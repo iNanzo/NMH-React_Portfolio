@@ -10,6 +10,8 @@
 
 My task was to create a react portfolio and deploy it on github pages. It was simple at first, I began by converting my old HTML portfolio into seperate pages for react. After that I updated some stuff and added all the new required parts of the portfolio. Deploying to github pages was confusing because I accidentally made a branch myself instead of using the deploy, so I made a new github repository to deploy to. It didn't work at first, but I figured out that the homepage was linked to the old repository's name so I fixed it and the deployment worked. In hindsight it was simpler to deploy than I thought.
 
+![image](https://cdn.discordapp.com/attachments/695157509761269790/943769825350660116/unknown.png)
+
 ## Acceptance Criteria
 
 ```md
