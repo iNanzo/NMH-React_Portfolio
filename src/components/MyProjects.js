@@ -54,8 +54,8 @@ function Projects() {
                     <p>Coming soon...</p>
                 </section> */}
                 <section class="card mainproj">        
-                    <h2>NBA Player Stats</h2>
-                    <a href="https://snkrfr3sh.github.io/sport_facts/" target="_blank"><img src={require("../assets/images/Project1.png")} alt="NBA Player Stats"/></a><br />
+                    <h2>NBA Sports Facts</h2>
+                    <a href="https://snkrfr3sh.github.io/sport_facts/" target="_blank"><img src={require("../assets/images/Project1.png")} alt="NBA Sports Facts"/></a><br />
                     <p>
                         <a href="https://github.com/SnkrFr3sh/sport_facts" target="_blank">GitHub</a><br />
                         A site used to get quick basic information on NBA players past and present. <br />

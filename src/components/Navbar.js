@@ -1,4 +1,5 @@
 import React from 'react';
+import resume from '../assets/Newton Hoang Resume.pdf'
 
 function Navbar({ currentPage, handlePageChange }) {
     return (
@@ -23,6 +24,10 @@ function Navbar({ currentPage, handlePageChange }) {
                         onClick={() => handlePageChange('Contact')}
                         className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>
                     Contact Me
+                    </a></li>
+                    <li><a
+                        href={resume} target="_blank">
+                    Resume
                     </a></li>
                 </ul>
             </nav>
